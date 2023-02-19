@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  zeta-project:
+    build:
+      context: .
+      target: production
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 3000:3000
+    env_file: .env
+    depends_on:
+      - zeta-postgres-db
+
+  zeta-postgres-db:
+    image: postgres:alpine
+    ports:
+      - "5432:5432"
+    container_name: "zeta-postgres-db"
+    volumes:
+      - ./database:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    
+volumes:
+  database: 
