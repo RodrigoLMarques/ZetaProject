@@ -1,6 +1,6 @@
 # ZetaProject
 
-<p>Este é um desafio técnico(backend) do processo seletivo da Zeta</p>
+<p>Este é um desafio técnico(backend) do processo seletivo da Zeta.</p>
 <p>É avaliado capacidade de realizar operações básicas de criação, leitura, atualização e remoção de dados seguindo os padrões de projetos de uma API RESTful e arquitetura separada por camadas de responsabilidades únicas.</p>
 
 ## Sumário
@@ -35,7 +35,7 @@ Possuindo apenas uma única tabela, sendo a de Usuários.
 
 ### API Features
 
-A API possui esses seguintes recursos:
+A API desenvolvida possui esses seguintes recursos:
 
 - [x] Cadastro de usuário.
 - [x] Listar todos os usuários.
@@ -56,9 +56,9 @@ As seguintes são as principais tecnologias usadas na construção do projeto:
 
 ### Arquitetura
 
-A arquitetura baseada na criação da API foi o modelo `MSC` (Model-Service-Controll), contendo cada camada responsabilidades únicas.
+A arquitetura baseada na criação da API foi o modelo `MSC` (Model Service Controller), contendo cada camada responsabilidades únicas.
 
-- `Controll`: A camada de controle é responsável por intermediar as requisições enviadas pelo Client com as respostas fornecidas pelo Service
+- `Controller`: A camada de controle é responsável por intermediar as requisições enviadas pelo Client com as respostas fornecidas pelo Service
 - `Service`: A camada de serviço é resonsável por agrupar as regras de negócios da aplicação
 - `Model`: A camada de model é responsável pelo acesso e manipulação dos dados na sua aplicação
 
@@ -88,10 +88,9 @@ git clone https://github.com/RodrigoLMarques/ZetaProject
 docker compose -f docker-compose.dev.yml up
 ```
 
-Assim os containers se ativaram e o servidor da aplicação já vai estar rodando em `http://localhost:3000`. Você pode enviar as solicitações de API implementadas em [`http://localhost:3000/api/`](http://localhost:3000/api/).
+Assim os containers se ativaram e o servidor da aplicação já vai estar rodando em `http://localhost:3000`.
 
-
-### Back-end
+### Executando os testes
 
 Foram feitos testes unitários e de integração para cada endpoint da API usando `Jest` e `Supertest`.
 
@@ -100,7 +99,7 @@ Para executar os testes, siga os seguintes passos:
 1. Acesse o terminal do container da API com o comando abaixo:
 
 ``` bash
-docker exec -it zeta-project bash
+docker exec -it zeta-project sh
 ```
 
 2. No terminal do container da API, execute o seguinte comando:
