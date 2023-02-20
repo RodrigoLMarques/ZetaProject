@@ -58,9 +58,9 @@ As seguintes são as principais tecnologias usadas na construção do projeto:
 
 A arquitetura baseada na criação da API foi o modelo `MSC` (Model Service Controller), contendo cada camada responsabilidades únicas.
 
-- `Controller`: A camada de controle é responsável por intermediar as requisições enviadas pelo Client com as respostas fornecidas pelo Service
-- `Service`: A camada de serviço é resonsável por agrupar as regras de negócios da aplicação
-- `Model`: A camada de model é responsável pelo acesso e manipulação dos dados na sua aplicação
+- `Controller`: A camada de controle é responsável por intermediar as requisições enviadas pelo Client com as respostas fornecidas pelo Service.
+- `Service`: A camada de serviço é resonsável por agrupar as regras de negócios da aplicação.
+- `Model`: A camada de model é responsável pelo acesso e manipulação dos dados na sua aplicação.
 
 ![MSC](https://user-images.githubusercontent.com/102917955/220129108-b18b89cc-967f-470a-b9c6-8d824855ff35.png)
 
@@ -69,8 +69,8 @@ A arquitetura baseada na criação da API foi o modelo `MSC` (Model Service Cont
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com) e o [Docker](https://www.docker.com/). 
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+[Git](https://git-scm.com) e o [Docker](https://www.docker.com/).
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
 ### Passo a passo
 
@@ -90,7 +90,7 @@ docker compose -f docker-compose.dev.yml up
 
 Assim os containers se ativaram e o servidor da aplicação já vai estar rodando em `http://localhost:3000`.
 
-### Executando os testes
+## Executando os testes
 
 Foram feitos testes unitários e de integração para cada endpoint da API usando `Jest` e `Supertest`.
 
@@ -114,35 +114,35 @@ Você pode acessar a API REST do servidor usando os seguintes endpoints:
 
 ### `GET`
 
-- `/api/users`: Buscar todos os usuários
-- `/api/users/:id`: Buscar um único usuário
+- `/api/users`: Buscar todos os usuários.
+- `/api/users/:id`: Buscar um único usuário.
 
 ### `POST`
 
-- `/api/users`: Criar um novo usuário
+- `/api/users`: Criar um novo usuário.
   - Body:
-    - `name: String` (required): O nome do usuário 
-    - `email: String` (required): O endereço de e-mail do usuário
-    - `contact: String` (required): O contato do usuário 
-    - `password: String` (required): A senha do usuário 
+    - `name: String` (required): O nome do usuário.
+    - `email: String` (required): O endereço de e-mail do usuário.
+    - `contact: String` (required): O contato do usuário.
+    - `password: String` (required): A senha do usuário.
     
 - `/api/login`: Login do usuário
   - Body:
-    - `email: String` (optional): O endereço de e-mail do usuário
-    - `password: String` (optional): A senha do usuário 
+    - `email: String` (optional): O endereço de e-mail do usuário.
+    - `password: String` (optional): A senha do usuário.
 
 ### `PUT`
-- `/api/users/:id`: Atualizar um usuário
+- `/api/users/:id`: Atualizar um usuário.
   - Body:
-    - `name: String` (optional): O nome do usuário 
-    - `email: String` (optional): O endereço de e-mail do usuário
-    - `contact: String` (optional): O contato do usuário 
-    - `password: String` (optional): A senha do usuário 
+    - `name: String` (optional): O nome do usuário.
+    - `email: String` (optional): O endereço de e-mail do usuário.
+    - `contact: String` (optional): O contato do usuário.
+    - `password: String` (optional): A senha do usuário.
   - Token:
-    - `Bearer Token` (required): Token de login do usuário
+    - `Bearer Token` (required): Token de login do usuário.
     
 ### `DELETE`
-- `/api/users/:id`: Excluir um usuário
+- `/api/users/:id`: Excluir um usuário.
    - Token:
-    - `Bearer Token` (required): Token de login do usuário
+    - `Bearer Token` (required): Token de login do usuário.
  
