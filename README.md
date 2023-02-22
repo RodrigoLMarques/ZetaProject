@@ -59,8 +59,8 @@ As seguintes são as principais tecnologias usadas na construção do projeto:
 A arquitetura baseada na criação da API foi o modelo `MSC` (Model Service Controller), contendo cada camada responsabilidades únicas.
 
 - `Controller`: A camada de controle é responsável por intermediar as requisições enviadas pelo Client com as respostas fornecidas pelo Service.
-- `Service`: A camada de serviço é resonsável por agrupar as regras de negócios da aplicação.
-- `Model`: A camada de model é responsável pelo acesso e manipulação dos dados na sua aplicação.
+- `Service`: A camada de serviço é resonsável pelas validações e agrupar as regras de negócios da aplicação.
+- `Model`: A camada de model é responsável pelo acesso e manipulação dos dados da aplicação.
 
 ![MSC](https://user-images.githubusercontent.com/102917955/220129108-b18b89cc-967f-470a-b9c6-8d824855ff35.png)
 
