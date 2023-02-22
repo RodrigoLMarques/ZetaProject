@@ -115,7 +115,7 @@ Você pode acessar a API REST do servidor usando os seguintes endpoints:
 ### `GET`
 
 - `/api/users`: Buscar todos os usuários.
-- `/api/users/:id`: Buscar um único usuário.
+- `/api/users/<int:id>`: Buscar um único usuário.
 
 ### `POST`
 
@@ -132,17 +132,17 @@ Você pode acessar a API REST do servidor usando os seguintes endpoints:
     - `password: String` (optional): A senha do usuário.
 
 ### `PUT`
-- `/api/users/:id`: Atualizar um usuário.
+- `/api/users/<int:id>`: Atualizar um usuário.
   - Body:
-    - `name: String` (optional): O nome do usuário.
-    - `email: String` (optional): O endereço de e-mail do usuário.
-    - `contact: String` (optional): O contato do usuário.
-    - `password: String` (optional): A senha do usuário.
+    - `name: String` (optional): O nome do usuário a ser alterado.
+    - `email: String` (optional): O endereço de e-mail do usuário a ser alterado.
+    - `contact: String` (optional): O contato do usuário a ser alterado.
+    - `password: String` (optional): A senha do usuário a ser alterado.
   - Token:
     - `Bearer Token` (required): Token de login do usuário.
     
 ### `DELETE`
-- `/api/users/:id`: Excluir um usuário.
-   - Token:
+- `/api/users/<int:id>`: Excluir um usuário.
+  - Token:
     - `Bearer Token` (required): Token de login do usuário.
  
