@@ -76,7 +76,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 </br>
 
-1. Clone o este repositório:
+1. Clone este repositório:
 
 ``` bash
 git clone https://github.com/RodrigoLMarques/ZetaProject
