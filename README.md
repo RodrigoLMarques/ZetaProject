@@ -94,7 +94,7 @@ docker compose -f docker-compose.dev.yml up -d
 docker exec -it zeta-project sh
 ```
 
-4. No terminal do container da API, execute o seguinte comando(caso falhe, tente de novo o comando):
+4. No terminal do container da API, execute o seguinte comando para realizar a migrate:
 
 ``` bash
 npx prisma migrate dev
