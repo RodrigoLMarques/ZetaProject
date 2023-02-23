@@ -6,7 +6,7 @@ COPY package*.json ./
 COPY prisma ./prisma/
 
 RUN npm install
-RUN npx prisma generate
+RUN npx prisma migrate dev
 
 COPY . .
 
@@ -22,6 +22,7 @@ WORKDIR /usr/src/app
 COPY package*.json .
 
 RUN npm ci --only=production
+RUN npx prisma migrate dev
 
 COPY --from=development /usr/src/app/dist ./dist
 

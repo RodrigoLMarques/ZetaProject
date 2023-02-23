@@ -5,7 +5,6 @@ import { UserService } from '../../../services/UserService';
 import { BadRequestError } from '../../../errors/badRequestError';
 import { NotFoundError } from '../../../errors/notFoundError';
 
-
 describe('User service', () => {
 
     let userRepository: IUserRepository;
