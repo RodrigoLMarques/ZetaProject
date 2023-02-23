@@ -69,7 +69,7 @@ A arquitetura baseada na criação da API foi o modelo `MSC` (Model Service Cont
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com) e o [Docker](https://www.docker.com/).
+[Node.js](https://nodejs.org/en/), [Git](https://git-scm.com) e o [Docker](https://www.docker.com/).
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
 ### Passo a passo
