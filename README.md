@@ -86,7 +86,7 @@ git clone https://github.com/RodrigoLMarques/ZetaProject
 
 ``` bash
 npm install
-docker compose -f docker-compose.dev.yml up
+docker compose -f docker-compose.dev.yml up -d
 ```
 
 3. Acesse o terminal do container da API com o comando abaixo:
