@@ -82,10 +82,9 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 git clone https://github.com/RodrigoLMarques/ZetaProject
 ```
 
-2. Na raiz do projeto instale as dependências e execute o composer do docker:
+2. Na raiz do projeto execute o composer do docker:
 
 ``` bash
-npm install
 docker compose -f docker-compose.dev.yml up -d
 ```
 
@@ -95,11 +94,12 @@ docker compose -f docker-compose.dev.yml up -d
 docker exec -it zeta-project sh
 ```
 
-4. No terminal do container da API, execute o seguinte comando:
+4. No terminal do container da API, execute o seguinte comando(caso falhe, tente de novo o comando):
 
 ``` bash
 npx prisma migrate dev
 ```
+As vezes a porta `5432` do banco de dados demora para abrir, então ao fazer a migrate pode ocasionar o erro `P1001` do prisma, caso aconteça repita o último comando esperando alguns segundos. 
 
 Assim os containers se ativaram e o servidor da aplicação já vai estar rodando em `http://localhost:3000` pronto para serem usados.
 
@@ -123,6 +123,7 @@ npm test
 
 ## Usando a API REST
 
+Caso use o Insomnia, eu deixei disponível na pasta do projeto o meu arquivo do insomnia que eu utilizava para testar a API.
 Você pode acessar a API REST do servidor usando os seguintes endpoints:
 
 ### `GET`
