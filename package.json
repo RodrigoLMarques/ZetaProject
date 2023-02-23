@@ -1,7 +1,7 @@
 {
   "name": "zetaproject",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto backend do processo seletivo da Zeta",
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --transpile-only --poll src/index.ts",
@@ -11,7 +11,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "RodrigoLMarques",
   "license": "ISC",
   "devDependencies": {
     "@types/body-parser": "^1.19.2",
