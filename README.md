@@ -82,13 +82,26 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 git clone https://github.com/RodrigoLMarques/ZetaProject
 ```
 
-2. Na raiz do projeto execute o composer do docker:
+2. Na raiz do projeto instale as dependências e execute o composer do docker:
 
 ``` bash
+npm install
 docker compose -f docker-compose.dev.yml up
 ```
 
-Assim os containers se ativaram e o servidor da aplicação já vai estar rodando em `http://localhost:3000`.
+3. Acesse o terminal do container da API com o comando abaixo:
+
+``` bash
+docker exec -it zeta-project sh
+```
+
+4. No terminal do container da API, execute o seguinte comando:
+
+``` bash
+npx prisma migrate dev
+```
+
+Assim os containers se ativaram e o servidor da aplicação já vai estar rodando em `http://localhost:3000` pronto para serem usados.
 
 ## Executando os testes
 
