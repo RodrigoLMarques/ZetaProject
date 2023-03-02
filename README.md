@@ -142,8 +142,8 @@ Você pode acessar a API REST do servidor usando os seguintes endpoints:
     
 - `/api/login`: Login do usuário
   - Body:
-    - `email: String` (optional): O endereço de e-mail do usuário.
-    - `password: String` (optional): A senha do usuário.
+    - `email: String` (required): O endereço de e-mail do usuário.
+    - `password: String` (required): A senha do usuário.
 
 ### `PUT`
 - `/api/users/<int:id>`: Atualizar um usuário.
